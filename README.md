@@ -1,3 +1,14 @@
+# Todo List
+
+This project is focus on practice TDD of a Todo List
+
+## Requirements
+
+- I can see a list of To Do notes.
+- I can create a To Do note.  
+- I can check them off if they're complete.
+- I can reset the list.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

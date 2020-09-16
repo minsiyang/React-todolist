@@ -15,7 +15,7 @@ class TodoList extends Component {
 
   handleSubmit = event => {
     this.state.todos.push(this.state.input)
-    this.setState( {todos: this.state.todos})
+    this.setState( {todos: this.state.todos, input: '' })
     event.preventDefault();
   }
 
@@ -23,10 +23,14 @@ class TodoList extends Component {
     return(
       <div className="todolist">
         <h1>Yet Another To Do List</h1>
-        <label htmlFor="textbox" >Add Todo</label>
-        <input type="text" id="textbox" value={this.state.input} onChange={this.handleChange} />
-        <input type="submit" value="Save" onClick={this.handleSubmit} />
-        <p>{this.state.todos}</p>
+        <form>
+          <label htmlFor="textbox" >Add Todo</label>
+          <input type="text" id="textbox" value={this.state.input} onChange={this.handleChange} />
+          <input type="submit" value="Save" onClick={this.handleSubmit} />
+        </form>
+        <ul>{this.state.todos.map((todo, index) => {
+             return <li key={index}>{todo}</li>
+        })}</ul>
       </div>
     )
   }
