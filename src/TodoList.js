@@ -19,6 +19,11 @@ class TodoList extends Component {
     event.preventDefault();
   }
 
+  handleReset = event => {
+    this.setState( {todos: [] })
+    event.preventDefault();
+  }
+
   render () {
     return(
       <div className="todolist">
@@ -27,9 +32,12 @@ class TodoList extends Component {
           <label htmlFor="textbox" >Add Todo</label>
           <input type="text" id="textbox" value={this.state.input} onChange={this.handleChange} />
           <input type="submit" value="Save" onClick={this.handleSubmit} />
+          <button type="button" onClick={this.handleReset}>Reset</button>
         </form>
         <ul>{this.state.todos.map((todo, index) => {
-             return <li key={index}>{todo}</li>
+             return <li key={index}>{todo}
+                    <input type="checkbox" />
+                    </li>
         })}</ul>
       </div>
     )
