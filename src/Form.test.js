@@ -6,9 +6,7 @@ import Form from './Form';
 
 test('it renders the title of todo list', () => {
   render(<Form />)
-  const element = screen.getByText(/yet another to do list/i)
   const textBox = screen.getByLabelText(/add todo/i)
-  expect(element).toBeInTheDocument();
   expect(textBox).toBeInTheDocument();
 })
 

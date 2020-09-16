@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import TodoList from './TodoList';
-import Header from './Header';
 
 class Form extends Component {
   constructor(props) {
@@ -29,7 +28,6 @@ class Form extends Component {
   render() {
     return(
       <div className="form">
-        <Header />
         <form>
           <label htmlFor="textbox" >Add Todo</label>
           <input type="text" id="textbox" value={this.state.input} onChange={this.handleChange} />
