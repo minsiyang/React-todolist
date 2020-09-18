@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import TodoList from './TodoList';
 
-jest.fn('./Todo', () => {
+jest.mock('./Todo', () => {
   const TodoMock = props => {
     return (
       <div>

@@ -3,6 +3,22 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Form from './Form';
 
+jest.mock('./TodoList', () => {
+  const TodoListMock = props => {
+    return (
+      <div>
+        <ul>
+          {props.lists.map((todo, index) => {
+            return ( <li key={index}>{todo}
+                       <input type="checkbox" />
+                     </li>)
+          })}
+        </ul>
+      </div>
+    )
+  }
+  return TodoListMock
+})
 
 test('it renders the title of todo list', () => {
   render(<Form />)
