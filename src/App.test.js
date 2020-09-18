@@ -2,6 +2,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
+jest.mock('./Header')
+
 test('renders app', () => {
   render(<App />);
   const element = screen.getByText(/yet another to do list/i);

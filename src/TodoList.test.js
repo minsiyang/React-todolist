@@ -2,19 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import TodoList from './TodoList';
 
-jest.mock('./Todo', () => {
-  const TodoMock = props => {
-    return (
-      <div>
-        <li>
-          {props.note}
-          <input type="checkbox" />
-        </li>
-      </div>
-    )
-  }
-  return TodoMock;
-})
+jest.mock('./Todo')
 
 test('it can render a todo note', () => {
   render(<TodoList lists={["Get Milk"]} />)
