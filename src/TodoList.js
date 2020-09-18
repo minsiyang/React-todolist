@@ -1,4 +1,5 @@
 import React from 'react';
+import Todo from './Todo';
 
 function TodoList(props) {
 
@@ -7,9 +8,7 @@ function TodoList(props) {
       <div className="todolist">
         <ul>
           {todos.map((todo, index) => {
-            return <li key={index}>{todo}
-                    <input type="checkbox" />
-                    </li>
+            return <Todo key={index} note={todo} />
         })}
         </ul>
       </div>
