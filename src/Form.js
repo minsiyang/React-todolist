@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import TodoList from './TodoList';
+import Button from '@material-ui/core/Button';
+import DeleteIcon from '@material-ui/icons/Delete';
+import SaveIcon from '@material-ui/icons/Save';
 
 class Form extends Component {
   constructor(props) {
@@ -31,8 +34,20 @@ class Form extends Component {
         <form>
           <label htmlFor="textbox" >Add Todo</label>
           <input type="text" id="textbox" value={this.state.input} onChange={this.handleChange} />
-          <input type="submit" value="Save" onClick={this.handleSubmit} />
-          <button type="button" onClick={this.handleReset}>Reset</button>
+          <br />
+          <Button variant="outlined"
+                  id="save"
+                  startIcon={<SaveIcon />}
+                  size="small"
+                  type="submit" 
+                  onClick={this.handleSubmit} >Save</Button>
+                  
+          <Button variant="contained" 
+                  color="secondary"
+                  size="small"
+                  startIcon={<DeleteIcon />} 
+                  type="button" 
+                  onClick={this.handleReset}>Reset</Button>
         </form>
         <TodoList lists={this.state.todos} />
       </div>
