@@ -674,3 +674,33 @@ patch:
         patched: '2020-12-04T23:05:41.334Z'
     - react-scripts > jest > @jest/core > jest-runner > jest-config > jest-jasmine2 > jest-runtime > @jest/transform > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2020-12-04T23:05:41.334Z'
+    - snyk > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-docker-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-gradle-plugin > @snyk/java-call-graph-builder > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-go-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-docker-plugin > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-mvn-plugin > @snyk/java-call-graph-builder > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-python-plugin > snyk-poetry-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-gradle-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
+    - snyk > snyk-mvn-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-12-11T10:35:13.961Z'
