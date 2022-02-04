@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.19.0
+version: v1.22.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -704,3 +704,29 @@ patch:
         patched: '2020-12-11T10:35:13.961Z'
     - snyk > snyk-mvn-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
         patched: '2020-12-11T10:35:13.961Z'
+    - react-scripts > eslint-plugin-flowtype > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > html-webpack-plugin > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > webpack-manifest-plugin > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > babel-eslint > @babel/traverse > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > @typescript-eslint/parser > @typescript-eslint/typescript-estree > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > eslint > table > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > babel-jest > @jest/transform > @babel/core > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > webpack-dev-server > portfinder > async > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > babel-jest > @jest/transform > @babel/core > @babel/helper-module-transforms > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2022-02-04T23:22:38.708Z'
